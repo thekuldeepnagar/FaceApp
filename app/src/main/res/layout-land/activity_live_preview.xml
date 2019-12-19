@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fireTopLayout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:keepScreenOn="true">
+
+  <com.example.faceapp.CameraSourcePreview
+      android:id="@+id/firePreview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <com.example.faceapp.GraphicOverlay
+        android:id="@+id/fireFaceOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+  </com.example.faceapp.CameraSourcePreview>
+
+  <FrameLayout
+      android:id="@+id/control"
+      android:layout_width="220dp"
+      android:layout_height="match_parent"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentTop="true"
+      android:background="#000" >
+
+      <ToggleButton
+          android:id="@+id/facingswitch"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:layout_gravity="bottom|end"
+          android:background="@layout/toggle_style"
+          android:textOff=""
+          android:textOn=""
+          android:checked="false" />
+
+  </FrameLayout>
+
+</RelativeLayout>
